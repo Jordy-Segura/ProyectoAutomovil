@@ -40,6 +40,102 @@ public class Automovil {
         this.color = color;
         this.velocidadActual = velocidadActual;
     }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public float getMotor() {
+        return motor;
+    }
+
+    public void setMotor(float motor) {
+        this.motor = motor;
+    }
+
+    public TipoCombustible getTipoCombustible() {
+        return tipoCombustible;
+    }
+
+    public void setTipoCombustible(TipoCombustible tipoCombustible) {
+        this.tipoCombustible = tipoCombustible;
+    }
+
+    public TipoAutomovil getTipoAutomovil() {
+        return tipoAutomovil;
+    }
+
+    public void setTipoAutomovil(TipoAutomovil tipoAutomovil) {
+        this.tipoAutomovil = tipoAutomovil;
+    }
+
+    public int getNumeroPuertas() {
+        return numeroPuertas;
+    }
+
+    public void setNumeroPuertas(int numeroPuertas) {
+        this.numeroPuertas = numeroPuertas;
+    }
+
+    public int getCantidadAsientos() {
+        return cantidadAsientos;
+    }
+
+    public void setCantidadAsientos(int cantidadAsientos) {
+        this.cantidadAsientos = cantidadAsientos;
+    }
+
+    public float getVelocidadMax() {
+        return velocidadMax;
+    }
+
+    public void setVelocidadMax(float velocidadMax) {
+        this.velocidadMax = velocidadMax;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public float getVelocidadActual() {
+        return velocidadActual;
+    }
+
+    public void setVelocidadActual(float velocidadActual) {
+        this.velocidadActual = velocidadActual;
+    }
+    
+    public void acelerarAuto() {
+        float incremento=0;
+        if (velocidadActual +incremento > velocidadMax) {
+            System.out.println("No se puede acelerar más allá de la velocidad máxima de " + velocidadMax + " km/h.");
+        } else {
+            velocidadActual += incremento;
+            System.out.println("Velocidad actual después de acelerar: " + velocidadActual + " km/h.");
+        }
+        
+    
+    
+        
+        
+    }
+        
     
     
 }
