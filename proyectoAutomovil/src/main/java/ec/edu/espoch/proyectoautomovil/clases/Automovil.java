@@ -145,5 +145,11 @@ public class Automovil {
         System.out.println("El automóvil ha frenado. Velocidad actual: " + velocidadActual + " km/h");
     } 
     
-    
+    public float calcularTiempoEstimadoLlegada() {
+        float distancia=100;
+        if (velocidadActual == 0) {
+            System.out.println("El automóvil está detenido.");
+        }
+        return distancia / velocidadActual;
+    }
 }
