@@ -149,7 +149,21 @@ public class Automovil {
         float distancia=100;
         if (velocidadActual == 0) {
             System.out.println("El automóvil está detenido.");
+            return -1;
         }
         return distancia / velocidadActual;
+    }
+    
+    public void mostrarDetalles() {
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Motor: " + motor + " litros");
+        System.out.println("Tipo de combustible: " + tipoCombustible);
+        System.out.println("Tipo de automóvil: " + tipoAutomovil);
+        System.out.println("Número de puertas: " + numeroPuertas);
+        System.out.println("Cantidad de asientos: " + cantidadAsientos);
+        System.out.println("Velocidad máxima: " + velocidadMax + " km/h");
+        System.out.println("Color: " + color);
+        System.out.println("Velocidad actual: " + velocidadActual + " km/h");
     }
 }
