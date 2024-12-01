@@ -11,6 +11,7 @@ import ec.edu.espoch.proyectoautomovil.enumeraciones.TipoCombustible;
 /**
  *
  * @author jordy
+ * @author carla
  */
 public class Automovil {
     
