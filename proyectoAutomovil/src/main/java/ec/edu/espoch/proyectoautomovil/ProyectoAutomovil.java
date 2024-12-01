@@ -18,6 +18,11 @@ public class ProyectoAutomovil {
     public static void main(String[] args) {
         Automovil miAuto = new Automovil("Toyota", "Corolla", 8, TipoCombustible.GASOLINA, TipoAutomovil.COMPACTO, 4, 5, 180, Color.NEGRO,40);
     
+        miAuto.mostrarDetalles();
+        miAuto.calcularTiempoEstimadoLlegada();
+        miAuto.acelerarAuto();
+        miAuto.desacelerarAuto();
+        miAuto.frenarAuto();
         
     }
 }

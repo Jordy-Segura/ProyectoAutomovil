@@ -122,7 +122,7 @@ public class Automovil {
     }
     
     public void acelerarAuto() {
-        float incremento=0;
+        float incremento=100;
         if (velocidadActual +incremento > velocidadMax) {
             System.out.println("No se puede acelerar más allá de la velocidad máxima de " + velocidadMax + " km/h.");
         } else {
@@ -131,7 +131,7 @@ public class Automovil {
         }           
     }
     public void desacelerarAuto() {
-        float decremento=0;
+        float decremento=50;
         if (velocidadActual - decremento < 0) {
             System.out.println("No se puede desacelerar a una velocidad negativa.");
         } else {
