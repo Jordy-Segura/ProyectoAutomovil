@@ -124,10 +124,10 @@ public class Automovil {
     public void acelerarAuto() {
         float incremento=0;
         if (velocidadActual +incremento > velocidadMax) {
-            System.out.println("No se puede acelerar más allá de la velocidad máxima de " + velocidadMax + " km/h.");
+            System.out.println("No se puede acelerar mas alla de la velocidad maxima de " + velocidadMax + " km/h.");
         } else {
             velocidadActual += incremento;
-            System.out.println("Velocidad actual después de acelerar: " + velocidadActual + " km/h.");
+            System.out.println("Velocidad actual despues de acelerar: " + velocidadActual + " km/h.");
         }           
     }
     public void desacelerarAuto() {
@@ -136,19 +136,19 @@ public class Automovil {
             System.out.println("No se puede desacelerar a una velocidad negativa.");
         } else {
             velocidadActual -= decremento;
-            System.out.println("Velocidad actual después de desacelerar: " + velocidadActual + " km/h.");
+            System.out.println("Velocidad actual despues de desacelerar: " + velocidadActual + " km/h.");
         }
     }
     
     public void frenarAuto() {
         velocidadActual = 0;
-        System.out.println("El automóvil ha frenado. Velocidad actual: " + velocidadActual + " km/h");
+        System.out.println("El automovil ha frenado. Velocidad actual: " + velocidadActual + " km/h");
     } 
     
     public float calcularTiempoEstimadoLlegada() {
         float distancia=100;
         if (velocidadActual == 0) {
-            System.out.println("El automóvil está detenido.");
+            System.out.println("El automovil esta detenido.");
             return -1;
         }
         return distancia / velocidadActual;
@@ -159,10 +159,10 @@ public class Automovil {
         System.out.println("Modelo: " + modelo);
         System.out.println("Motor: " + motor + " litros");
         System.out.println("Tipo de combustible: " + tipoCombustible);
-        System.out.println("Tipo de automóvil: " + tipoAutomovil);
+        System.out.println("Tipo de automovil: " + tipoAutomovil);
         System.out.println("Número de puertas: " + numeroPuertas);
         System.out.println("Cantidad de asientos: " + cantidadAsientos);
-        System.out.println("Velocidad máxima: " + velocidadMax + " km/h");
+        System.out.println("Velocidad maxima: " + velocidadMax + " km/h");
         System.out.println("Color: " + color);
         System.out.println("Velocidad actual: " + velocidadActual + " km/h");
     }
