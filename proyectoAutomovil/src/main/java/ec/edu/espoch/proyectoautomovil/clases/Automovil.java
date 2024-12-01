@@ -121,8 +121,7 @@ public class Automovil {
         this.velocidadActual = velocidadActual;
     }
     
-    public void acelerarAuto() {
-        float incremento=100;
+    public void acelerarAuto(float incremento) {
         if (velocidadActual +incremento > velocidadMax) {
             System.out.println("No se puede acelerar mas alla de la velocidad maxima de " + velocidadMax + " km/h.");
         } else {
@@ -130,8 +129,7 @@ public class Automovil {
             System.out.println("Velocidad actual despues de acelerar: " + velocidadActual + " km/h.");
         }           
     }
-    public void desacelerarAuto() {
-        float decremento=50;
+    public void desacelerarAuto(float decremento) {
         if (velocidadActual - decremento < 0) {
             System.out.println("No se puede desacelerar a una velocidad negativa.");
         } else {
@@ -140,19 +138,20 @@ public class Automovil {
         }
     }
     
-    public void frenarAuto() {
-        velocidadActual = 0;
-        System.out.println("El automovil ha frenado. Velocidad actual: " + velocidadActual + " km/h");
-    } 
-    
-    public float calcularTiempoEstimadoLlegada() {
-        float distancia=100;
+    public float calcularTiempoEstimadoLlegada(float distancia) {
         if (velocidadActual == 0) {
             System.out.println("El automovil esta detenido.");
             return -1;
         }
         return distancia / velocidadActual;
     }
+    
+    public void frenarAuto() {
+        velocidadActual = 0;
+        System.out.println("El automovil ha frenado. Velocidad actual: " + velocidadActual + " km/h");
+    } 
+    
+   
     
     public void mostrarDetalles() {
         System.out.println("Marca: " + marca);

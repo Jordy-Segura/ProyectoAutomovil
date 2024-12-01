@@ -16,13 +16,20 @@ import ec.edu.espoch.proyectoautomovil.enumeraciones.TipoCombustible;
 public class ProyectoAutomovil {
 
     public static void main(String[] args) {
-        Automovil miAuto = new Automovil("Toyota", "Hilux", 8, TipoCombustible.DIESEL, TipoAutomovil.COMPACTO, 4, 5, 280, Color.NEGRO,40);
+        Automovil miAuto = new Automovil("Toyota", "Hilux", 8, TipoCombustible.DIESEL, TipoAutomovil.COMPACTO, 4, 5, 280, Color.NEGRO,100);
     
         miAuto.mostrarDetalles();
-        miAuto.calcularTiempoEstimadoLlegada();
-        miAuto.acelerarAuto();
-        miAuto.desacelerarAuto();
+        miAuto.acelerarAuto(20);
+        miAuto.desacelerarAuto(50);
+        
+        float distancia = 200;
+        float tiempoEstimado = miAuto.calcularTiempoEstimadoLlegada(distancia);
+        if (tiempoEstimado != -1) {
+            System.out.println("Tiempo estimado de llegada a " + distancia + " km: " + tiempoEstimado + " horas");
+        }
+        
         miAuto.frenarAuto();
+        
         
     }
 }
