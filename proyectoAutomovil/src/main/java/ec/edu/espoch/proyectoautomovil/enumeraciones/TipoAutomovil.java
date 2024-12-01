@@ -6,7 +6,7 @@ package ec.edu.espoch.proyectoautomovil.enumeraciones;
 
 /**
  *
- * @author papel
+ * @author carla
  */
 public enum TipoAutomovil {
     
