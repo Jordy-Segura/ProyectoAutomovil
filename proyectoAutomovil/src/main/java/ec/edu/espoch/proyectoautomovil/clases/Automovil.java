@@ -128,14 +128,22 @@ public class Automovil {
         } else {
             velocidadActual += incremento;
             System.out.println("Velocidad actual después de acelerar: " + velocidadActual + " km/h.");
-        }
-        
-    
-    
-        
-        
+        }           
     }
-        
+    public void desacelerarAuto() {
+        float decremento=0;
+        if (velocidadActual - decremento < 0) {
+            System.out.println("No se puede desacelerar a una velocidad negativa.");
+        } else {
+            velocidadActual -= decremento;
+            System.out.println("Velocidad actual después de desacelerar: " + velocidadActual + " km/h.");
+        }
+    }
+    
+    public void frenarAuto() {
+        velocidadActual = 0;
+        System.out.println("El automóvil ha frenado. Velocidad actual: " + velocidadActual + " km/h");
+    } 
     
     
 }
